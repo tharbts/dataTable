@@ -7,7 +7,7 @@ export class MockService {
 
     constructor() { }
 
-    getPerson(){
+    getPeople(){
         return data;
     }
 }

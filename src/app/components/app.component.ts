@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit{
     peaple : Person[] = [];
 
     constructor(private mockService: MockService) {
-        this.peaple = mockService.getPerson();
+        this.peaple = mockService.getPeople();
     }
     ngAfterViewInit(): void {
         (<any>$('#table')).dataTable({
