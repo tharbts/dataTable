@@ -1,0 +1,25 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12">
+            <table id='table' class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Job</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let person of peaple">
+                        <th>{{person.id}}</th>
+                        <td>{{person.name}}</td>
+                        <td>{{person.age}}</td>
+                        <td>{{person.job}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
